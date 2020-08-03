@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script src="../js/react.development.js"></script>
+	<script src="../js/react-dom.development.js"></script>
+	<script src="../js/babel.min.js"></script>
+
+	<div id="test"></div>
+
+	<script type="text/babel">
+		const myId = 'xiaoMeIqIu'
+		const myData = 'HeLLo wOrLd'
+
+		//1 创建虚拟DOM
+		const VDOM = (
+			<h2 id={myId.toUpperCase()}>
+				<span>{myData.toUpperCase()}</span>
+			</h2>
+		)
+		//渲染虚拟DOM
+		ReactDOM.render(VDOM,document.getElementById('test'))
+	</script>
+</body>
+
+</html>
